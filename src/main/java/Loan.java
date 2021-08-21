@@ -4,8 +4,10 @@ public class Loan {
     private boolean isPaid;
     private double interestRate;
 
+    // Static variable.
     static private double maxLoanAmount;
 
+    // Since the variable is static, your method should also be static.
     public static double getMaxLoanAmount() {
         return maxLoanAmount;
     }
@@ -15,6 +17,8 @@ public class Loan {
         this.amount = amount;
         this.interestRate = interestRate;
         this.isPaid = false;
+        
+        // Set the max amount while creating the loan.
         if (this.amount > maxLoanAmount) {
             maxLoanAmount = this.amount;
         }
