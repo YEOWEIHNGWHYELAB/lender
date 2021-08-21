@@ -17,7 +17,7 @@ public class Loan {
         this.amount = amount;
         this.interestRate = interestRate;
         this.isPaid = false;
-        
+
         // Set the max amount while creating the loan.
         if (this.amount > maxLoanAmount) {
             maxLoanAmount = this.amount;
